@@ -2,3 +2,10 @@
 
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
+
+.centertext {
+  text-align: center;
+  padding-top: 40px;
+  font-size: large;
+  font-weight: bolder;
+}
