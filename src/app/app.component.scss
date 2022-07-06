@@ -1,15 +1,21 @@
 .header {
   height: 100px;
+  background-color: #8b9dc3;
 }
 
 .maincontent {
   min-height: calc(100vh - 170px);
+  background-color: #f7f7f7;
 }
 
 .footer {
+  background-color: #8b9dc3;
+  color: white;
+  text-align: center;
   height: 70px;
 }
 
 .leftsidebar {
   padding-top: 20px;
+  background-color: #dfe3ee;
 }
