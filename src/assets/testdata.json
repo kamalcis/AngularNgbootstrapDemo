@@ -1,0 +1,22 @@
+[
+  {
+    "id": "316fe049-d6a7-4c5b-bcd3-46e9df6fc687",
+    "name": "Test 1",
+    "address": "Test description"
+  },
+  {
+    "id": "c352e949-bd10-4bbb-af04-3c109948ce40",
+    "name": "Test 2",
+    "address": "Test description"
+  },
+  {
+    "id": "2a160c8d-f0c6-4008-bdc0-27eab26ca834",
+    "name": "Test 3",
+    "address": "Test description"
+  },
+  {
+    "id": "158cea81-e2c0-446d-bfc1-2b019719d2a4",
+    "name": "Test 4",
+    "address": "Test description"
+  }
+]
