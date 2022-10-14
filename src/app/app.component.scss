@@ -6,6 +6,7 @@
 .maincontent {
   min-height: calc(100vh - 170px);
   background-color: #f7f7f7;
+  padding: 20px;
 }
 
 .footer {
@@ -19,4 +20,8 @@
 .leftsidebar {
   padding-top: 20px;
   background-color: #dfe3ee;
+}
+
+.clear20 {
+  height: 20px;
 }

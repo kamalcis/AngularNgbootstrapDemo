@@ -1,7 +1,12 @@
-<button class="btn btn-primary">Save</button>
-<div class="dataarea">
-  <p>Hello</p>
+<div class="row">
+  <h4>Heros information</h4>
 </div>
+<div class="clear20"></div>
+
+<button class="btn btn-md btn-outline-primary" (click)="open(content)">
+  Add
+</button>
+
 <div class="dataarea">
   <table class="table table-striped">
     <thead>
@@ -24,3 +29,32 @@
     </tbody>
   </table>
 </div>
+
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss('Cross click')"
+    ></button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="mb-3">
+        <label>Date of birth</label>
+        <div class="input-group"></div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="modal.close('Save click')"
+    >
+      Save
+    </button>
+  </div>
+</ng-template>

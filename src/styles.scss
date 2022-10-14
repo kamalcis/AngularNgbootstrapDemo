@@ -10,5 +10,16 @@
   font-weight: bolder;
 }
 
-/* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+.clear20 {
+  height: 20px;
+}
+
+/*-----------Table bottom bottom border and first child border reset-------------*/
+.table > :not(caption) > * > * {
+  border-bottom-width: 0px !important;
+}
+
+.table > :has(:first-child) {
+  border-top-color: lightgray !important;
+  border-top-width: 1px;
+}
