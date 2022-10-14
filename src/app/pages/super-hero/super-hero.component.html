@@ -1,7 +1,26 @@
-<p>super-hero works!</p>
-
-<ul *ngFor="let hero of superHeroList">
-  <li>{{ hero.id }} - {{ hero.name }} - {{ hero.address }}</li>
-</ul>
-
 <button class="btn btn-primary">Save</button>
+<div class="dataarea">
+  <p>Hello</p>
+</div>
+<div class="dataarea">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of superHeroList; index as i">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>
+          {{ hero.name }}
+        </td>
+        <td>{{ hero.address }}</td>
+        <td>{{ hero.phone }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
