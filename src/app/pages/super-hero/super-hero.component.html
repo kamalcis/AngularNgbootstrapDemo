@@ -13,6 +13,7 @@
         <th scope="col">Name</th>
         <th scope="col">Address</th>
         <th scope="col">Phone</th>
+        <th scope="col">Action</th>
       </tr>
     </thead>
     <tbody>
@@ -23,10 +24,15 @@
         </td>
         <td>{{ hero.address }}</td>
         <td>{{ hero.phone }}</td>
-        <td>
-          <button class="btn btn-outline-dark" (click)="edit(content, hero)">
-            Edit
-          </button>
+        <td style="width: 150px">
+          <div style="display: flex; justify-content: space-between">
+            <button class="btn btn-outline-dark" (click)="edit(content, hero)">
+              Edit
+            </button>
+            <button class="btn btn-outline-dark" (click)="edit(content, hero)">
+              Delete
+            </button>
+          </div>
         </td>
       </tr>
     </tbody>
