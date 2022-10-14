@@ -14,6 +14,7 @@ export class SuperHeroComponent implements OnInit {
   public superHeroId: any;
   public superHeroName: any;
   public superHeroList: SuperHero[] = [];
+  public hero = {} as SuperHero;
 
   constructor(
     private _Activatedroute: ActivatedRoute,
@@ -36,6 +37,21 @@ export class SuperHeroComponent implements OnInit {
 
   closeResult = '';
   open(content: any) {
+    this.modalService
+      .open(content, { ariaLabelledBy: 'modal-basic-title' })
+      .result.then(
+        (result) => {
+          this.closeResult = `Closed with: ${result}`;
+        },
+        (reason) => {
+          this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+        }
+      );
+  }
+
+  edit(content: any, superHero: SuperHero) {
+    this.hero = superHero;
+
     this.modalService
       .open(content, { ariaLabelledBy: 'modal-basic-title' })
       .result.then(

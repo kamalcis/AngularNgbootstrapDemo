@@ -3,9 +3,7 @@
 </div>
 <div class="clear20"></div>
 
-<button class="btn btn-md btn-outline-primary" (click)="open(content)">
-  Add
-</button>
+<button class="btn btn-outline-dark" (click)="open(content)">Add</button>
 
 <div class="dataarea">
   <table class="table table-striped">
@@ -25,6 +23,11 @@
         </td>
         <td>{{ hero.address }}</td>
         <td>{{ hero.phone }}</td>
+        <td>
+          <button class="btn btn-outline-dark" (click)="edit(content, hero)">
+            Edit
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -43,8 +46,18 @@
   <div class="modal-body">
     <form>
       <div class="mb-3">
-        <label>Date of birth</label>
-        <div class="input-group"></div>
+        <label>Name:</label>
+        <p>{{ hero.name }}</p>
+      </div>
+
+      <div class="mb-3">
+        <label>Address:</label>
+        <p>{{ hero.address }}</p>
+      </div>
+
+      <div class="mb-3">
+        <label>Phone:</label>
+        <p>{{ hero.phone }}</p>
       </div>
     </form>
   </div>
