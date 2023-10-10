@@ -33,6 +33,12 @@ export class SuperHeroComponent implements OnInit {
       .subscribe((data) => (this.superHeroList = data));
   }
 
+  //---------------------------Crud Operation-----------------------
+  saveData(modal: any){
+    
+    modal.close();
+  }
+
   /*-----------------------------Modal Popup----------------------------*/
 
   closeResult = '';
